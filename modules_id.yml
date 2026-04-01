@@ -1,0 +1,22 @@
+info:
+  name: modules_id
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{url}}/api/modules/:id"
+  headers:
+    - name: Authorization
+      value: lol eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImVtYWlsIjoidXNlcjFAbWFpbC5ydSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc1MDE4NTQ5LCJleHAiOjE3NzU2MjMzNDl9.2YJcGwDLhg5Ew2wkwKlTOMSda9g3L9reBppuKk0BWjs
+  params:
+    - name: id
+      value: "1"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

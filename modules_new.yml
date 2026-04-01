@@ -1,0 +1,41 @@
+info:
+  name: modules_new
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{url}}/api/modules"
+  headers:
+    - name: Authorization
+      value: lol eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImVtYWlsIjoidXNlcjFAbWFpbC5ydSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTAxOTc2NSwiZXhwIjoxNzc1NjI0NTY1fQ.ljZpX3sKVCEho8--53krbm4hqx1YBpn7hS1rpmP-B_Q
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Тест",
+        "description": "Описание",
+        "fullDescription": "Полное описание",
+        "category": "web",
+        "popularity": "high",
+        "downloads": 67,
+        "monthlyDownloads": 52,
+        "version": "1.0.0",
+        "license": "MIT",
+        "tags": "[]",
+        "rating": "5.0",
+        "github": "https://github/test",
+        "docs": "https://test/docs",
+        "stars": 42,
+        "forks": "4",
+        "contributors": "5+",
+        "released": "2026",
+        "example": "print(1+1)"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

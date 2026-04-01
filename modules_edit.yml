@@ -1,0 +1,28 @@
+info:
+  name: modules_edit
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{url}}/api/modules/:id"
+  headers:
+    - name: Authorization
+      value: lol eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImVtYWlsIjoidXNlcjFAbWFpbC5ydSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTAxOTc2NSwiZXhwIjoxNzc1NjI0NTY1fQ.ljZpX3sKVCEho8--53krbm4hqx1YBpn7hS1rpmP-B_Q
+  params:
+    - name: id
+      value: "11"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "description": "Измененное описание"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
